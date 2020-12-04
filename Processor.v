@@ -107,7 +107,7 @@ module singlecycle(
   	assign #2 muxB = alusrc ? extimm : regoutB;
   	ALU alu(
     	.BusA(regoutA),
-      .BusB( muxB),
+        .BusB( muxB),
     	.BusW(aluout),
     	.Zero(zero),
     	.ALUCtrl(aluctrl)
